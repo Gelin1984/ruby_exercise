@@ -58,5 +58,4 @@
 require 'faker'
 
 country_picker = Faker::Address.country
-
-puts country_picker
+puts country_picker.gsub(/[ABCDEFGHIJKLMNOPRSTUWXYZabcdefghijklmnoprstuwxyz]/, '*')
