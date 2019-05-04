@@ -57,5 +57,24 @@
 
 require 'faker'
 
+# def characters_valid?(user_character)
+# 	if user_character.included(dupa)
+# 		puts "yay!"
+# 	end
+# end
+
 country_picker = Faker::Address.country
-puts country_picker.gsub(/[ABCDEFGHIJKLMNOPRSTUWXYZabcdefghijklmnoprstuwxyz]/, '*')
+	separated_letters =  country_picker.split("") 
+puts "tell me the letter"
+user_input_letter = gets.chomp
+	if separated_letters.include?user_input_letter 
+		puts "well done! You guessed a letter :) "
+	else puts "you lost"
+	end  #=> true
+
+	# if user_letter_input = 
+# puts country_picker.gsub(/'*'/, '[ABCDEFGHIJKLMNOPRSTUWXYZabcdefghijklmnoprstuwxyz]')
+
+# puts "Podaj Swoją Literkę"
+# user_letter_input = gets.chomp
+# if user_letter_input = 
